@@ -19,7 +19,7 @@ You will also need to add a usersecrets file like this:
   "BING_API_KEY": ""
 }
 ```
-Then add this key in the SemanticKernelDemo.csproj file
+Then add the key for this usersecrets file (C:\Users\YOUR_USER_NAME\AppData\Roaming\Microsoft\UserSecrets\YOUR_GUID) in the SemanticKernelDemo.csproj file
 ```
 <UserSecretsId></UserSecretsId>
 ```
