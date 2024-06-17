@@ -1,4 +1,4 @@
-# Semantid Kernel demo
+# Semantic Kernel demo
 
 This is a small demo using [Microsoft Semantic Kernel](https://learn.microsoft.com/en-us/semantic-kernel/overview/?tabs=Csharp) to connect your application to a Large Language Model like [OpenAI](https://platform.openai.com/docs/overview)
 
