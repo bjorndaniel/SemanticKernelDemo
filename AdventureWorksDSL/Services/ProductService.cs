@@ -8,7 +8,7 @@ public class ProductService(IDbContextFactory<AdventureWorksDbContext> dbContext
         using var dbContext = await dbContextFactory.CreateDbContextAsync();
         return (await dbContext.Products
             .Include(_ => _.ProductModel)
-                .ThenInclude(_ => _.ProductModelProductDescriptionCultures)
+                .ThenInclude(_ => _!.ProductModelProductDescriptionCultures)
                     .ThenInclude(_ => _.ProductDescription)
             .Where(p => EF.Functions.Like(p.Name, $"%{name}%")).ToListAsync())
             .Select(_ => new ProductDTO(_.ProductId, _.Name, _.ProductNumber, 
