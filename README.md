@@ -10,7 +10,7 @@ For the OMDB api you can get an API key [here](http://www.omdbapi.com/apikey.asp
 
 The Adventure works DSL uses a connection string to a SQL Server database, you can download the database [here](https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms)
 
-You will also need to add a usersecrets file like this:
+You will also need to add a [usersecrets](https://learn.microsoft.com/en-us/aspnet/core/security/app-secrets?view=aspnetcore-8.0&tabs=windows) file like this:
 ```
 {
   "OPENAI_API_KEY": "",
